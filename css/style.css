@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+}
+
+.row{
+    height: 50px;
+}
+[class*="col-"]{
+    background-color: orangered;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bigger{
+    height: 70px;
+    margin-bottom: 20px;
+}
+[class*="col-"] .row{
+    height: 70px;
+    border: 10px solid orangered;
+}
+
+[class*="col-"] [class*="col-"]{
+    background-color: aquamarine;
+    border: 1px solid orangered;
+}
